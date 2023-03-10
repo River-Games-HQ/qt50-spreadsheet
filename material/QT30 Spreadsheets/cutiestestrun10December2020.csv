@@ -1,0 +1,133 @@
+Cutie annotation progress,,10 Dec 2020,,0,,,,,44,,Completion:,100.00%,,,,,,,,
+Part,Analyst,Reviewer,Status,,,,,,,AIFdb map ID,,3,,,Timezone:,GMT+01,,,,+1h
+,,,Awaiting Transcript,Transcript In,Analysis Under Way,Analysis Complete,Review Under Way,Review Complete,AIFdb upload,,,Analyst Availability,Yes,,Receipt time,Analysis duration,Review duration,Submit time,Analysis Start,Review Start
+1,Christopher Beckett,Mandela Shahto,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19309,,Kamila Gorska,,,20:51:31,15:57,6:17,21:14:05,20:51:31,20:07:28
+2,Hyewon Jang,Qi Yu,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19310,,Christopher Beckett,,,20:52:26,15:19,7:35,21:22:39,20:52:26,20:07:45
+3,Nicole Orr,Stefanie Müller,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19311,,,,,20:52:58,22:34,8:43,21:23:19,20:52:58,20:14:24
+4,Zlata Kikteva,Mandela Shahto,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19312,,,,,20:54:15,23:33,10:58,21:29:02,20:54:15,20:17:48
+5,Xiyuan Gao,Karina Borimann,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19316,,,,,20:54:41,25:50,20:08,21:40:40,20:54:41,20:20:31
+6,Camilla Uhlbäck,Mandela Shahto,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19327,,,,,20:55:00,51:00,19:53,22:06:19,20:55:00,20:46:15
+7,Karina Borimann,Xiyuan Gao,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19318,,,,,20:56:14,23:47,27:25,21:47:56,20:56:14,20:20:31
+8,Stephanie Gustedt,Calum MacGillivray,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19317,,,,,20:57:40,27:33,19:05,21:44:20,20:57:40,20:25:13
+9,Anna Mauz,Kyle McWilliam,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19314,,,,,20:59:22,18:51,18:51,21:29:21,20:59:22,20:18:13
+10,Calum MacGillivray,Stephanie Gustedt,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19315,,,,,21:00:24,24:49,14:40,21:40:11,21:00:24,20:25:13
+11,Ella Schad,Christopher Beckett,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19321,,,,,21:01:21,29:00,20:34,21:53:36,21:01:21,20:33:01
+12,Kyle McWilliam,Anna Mauz,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19313,,,,,21:02:45,16:28,10:51,21:29:17,21:02:45,20:18:13
+13,Weronika Włodarek,Martyna Iwach,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19323,,,,,21:04:13,30:29,22:13,21:57:26,20:04:17,20:35:05
+14,Pawel Knorps,Marleen Kaesebier,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19332,,,,,21:04:33,36:42,25:52,22:10:06,20:04:36,20:44:10
+15,Abbie Hamilton,Ella Schad,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19335,,,,,21:05:49,66:28,14:55,22:28:08,20:05:54,21:13:05
+16,Martyna Iwach,Weronika Włodarek,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19320,,,,,21:07:50,26:38,17:09,21:52:13,20:07:56,20:35:03
+17,Marleen Kaesebier,Pawel Knorps,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19326,,,,,21:08:16,35:36,17:11,22:03:25,20:08:21,20:44:15
+18,Christopher Beckett,Ella Schad,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19322,,,,,21:09:53,18:39,21:01,21:54:28,20:14:03,20:33:23
+19,Hyewon Jang,Anna Mauz,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19325,,,,,21:11:58,27:46,12:03,22:03:14,20:22:57,20:50:59
+20,Nicole Orr,Xiyuan Gao,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19319,,,,,21:15:11,17:04,8:09,21:49:23,20:23:19,20:41:04
+21,Anna Mauz,Hyewon Jang,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19324,,,,,21:15:14,17:48,7:45,21:59:02,20:28:41,20:50:59
+22,Zlata Kikteva,Stephanie Gustedt,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19339,,,,,21:18:58,41:38,20:30,22:31:33,20:29:14,21:11:12
+23,Kyle McWilliam,Weronika Włodarek,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19328,,,,,21:19:00,23:29,8:51,22:06:43,20:29:14,20:57:52
+24,Calum MacGillivray,Kamila Gorska,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19331,,,,,21:23:22,20:51,8:58,22:10:25,20:40:08,21:01:27
+25,Stephanie Gustedt,Zlata Kikteva,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19338,,,,,21:23:23,26:22,19:36,22:30:56,20:44:36,21:11:14
+26,Kamila Gorska,Calum MacGillivray,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19330,,,,,21:23:24,15:37,7:57,22:12:18,20:45:13,21:01:31
+27,Matt Foulis,Nicole Orr,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19343,,,,,21:24:01,37:15,16:36,22:40:48,20:46:02,21:24:11
+28,Karina Borimann,Anna Mauz,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19347,,,,,21:26:58,34:36,20:54,22:44:09,20:48:22,21:23:15
+29,Xiyuan Gao,Hyewon Jang,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19333,,,,,21:27:04,12:40,8:37,22:12:08,20:48:58,21:03:24
+30,Nicole Orr,Matt Foulis,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19340,,,,,21:27:44,34:28,12:34,22:40:21,20:49:26,21:24:10
+31,Martyna Iwach,Xiyuan Gao,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19345,,,,,21:30:03,37:59,11:29,22:42:20,20:52:31,21:30:46
+32,Ella Schad,Abbie Hamilton,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19341,,,,,21:30:05,17:30,26:32,22:39:46,20:54:07,21:13:03
+33,Christopher Beckett,Marleen Kaesebier,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19336,,,,,21:31:11,23:50,9:27,22:29:18,20:54:26,21:19:43
+34,Anna Mauz,Karina Borimann,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19342,,,,,21:33:08,21:39,15:58,22:39:09,20:59:09,21:23:11
+35,Marleen Kaesebier,Christopher Beckett,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19337,,,,,21:35:10,15:40,9:49,22:29:38,21:03:42,21:19:42
+36,Camilla Uhlbäck,Kyle McWilliam,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19348,,,,,21:35:21,22:21,18:13,22:47:15,21:06:26,21:29:02
+37,Kyle McWilliam,Camilla Uhlbäck,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19344,,,,,21:36:02,17:11,14:06,22:43:13,21:07:03,21:29:01
+38,Weronika Włodarek,Pawel Knorps,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19349,,,,,21:37:14,24:03,15:47,22:49:30,21:07:18,21:33:35
+39,Kamila Gorska,Calum MacGillivray,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19350,,,,,21:41:27,24:19,14:29,22:50:45,21:09:44,21:36:13
+40,Pawel Knorps,Weronika Włodarek,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19352,,,,,21:41:27,23:02,19:13,22:52:51,21:10:18,21:33:34
+41,Calum MacGillivray,Kamila Gorska,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19351,,,,,21:41:48,25:23,15:10,22:51:26,21:10:37,21:36:12
+42,Xiyuan Gao,Martyna Iwach,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19346,,,,,21:43:39,18:02,12:51,22:43:41,21:12:13,21:30:45
+43,Hyewon Jang,Matt Foulis,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19356,,,,,21:45:37,35:40,7:10,22:56:48,21:13:18,21:49:15
+44,Christopher Beckett,Kamila Gorska,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,19355,,,,,21:45:39,21:14,8:29,22:55:43,21:29:21,21:49:15
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,xxx,,,,,,,,
