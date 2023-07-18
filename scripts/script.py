@@ -76,18 +76,15 @@ def get_excerpt(part_num: str, date: datetime):
 # returns the json numbers for all parts of a certain date
 def get_json_numbers(filename: str):
     maps = pd.read_csv(
-        '../material/QT30_managment_for_processing.csv', header=None)
+        '../material/map_sheet.csv', header=None)
     maps = maps[[str(x) in filename for x in maps[0]]]
     nums = []
     numsMissing=[]
+
     for idx, row in maps.iterrows():
         a = ''
-        if str(row[5]) != "nan":
-            a = str(row[5])
-        elif str(row[3]) != "nan":
-            a = str(row[3])
-        else:
-            a = str(row[2])
+        if str(row[11] != "nan"):
+            a = str(row[11])
         if a not in maps_to_ignore:
             if a in get_all_json_files():
                 nums.append(a)
@@ -121,6 +118,17 @@ def get_spreadsheet_data(filename: str, partnum: str):
                 result["Analysis duration"] = row[16]
                 result["Review duration"] = row[17]
             return result
+        
+def get_part(json_num: str, filename: str):
+    maps = pd.read_csv(
+        '../material/map_sheet.csv', header=None)
+    maps = maps[[str(x) in filename for x in maps[0]]]
+    for idx, row in maps.iterrows():
+        if row[11] == json_num:
+            if row[9] == "IMC":
+                return 'none'
+            return re.sub(r'part\s', '', row[9])
+    print("no partnumber found for " + json_num + " in " + filename)
 
 # loops through all spreadsheets and populate the rows for the statistics df from there
 if __name__ == '__main__':
@@ -134,14 +142,18 @@ if __name__ == '__main__':
         testrun = get_testrun_name(spreadsheet)
         date = filter_date(spreadsheet)
         for num in json_nums:
-            # part = get_part(num, spreadsheet)
-            # here we would insert partnumber
-            sdata = get_spreadsheet_data(spreadsheet, "1")
+            part = get_part(num, spreadsheet)
+            if part == "none":
+                continue
+            sdata = get_spreadsheet_data(spreadsheet, part)
+            if sdata == None:
+                print("error in part " + part + " of testrun " + str(date))
+                continue
             row = {}
             row["Testrun"] = testrun
             row["Json ID"] = num
-            row["Part number"] = "-"
-            row["Part text"] = get_excerpt("1", date)
+            row["Part number"] = part
+            row["Part text"] = get_excerpt(part, date)
             row["Analyst name"] = sdata["Analyst name"]
             row["Number of words"] = 0
             row["Analysis duration"] = sdata["Analysis duration"]
