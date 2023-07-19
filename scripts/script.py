@@ -108,7 +108,10 @@ def get_all_json_files():
 def get_spreadsheet_data(filename: str, partnum: str):
     df = pd.read_csv(filename, header=None)
     for idx, row in df.iterrows():
-        if row[0] == partnum:
+        edge_case = False
+        if filename == "../material/spreadsheets/cutietestrun4June2020.csv" and 29 < int(partnum) < 48:
+            edge_case = True
+        if row[0] == partnum or (edge_case and re.sub(r"^1", "", str(row[0])) == partnum):
             result = {}
             result["Analyst name"] = row[1]
             if not re.search(r"2020", filename):
@@ -147,7 +150,7 @@ if __name__ == '__main__':
                 continue
             sdata = get_spreadsheet_data(spreadsheet, part)
             if sdata == None:
-                print("error in part " + part + " of testrun " + str(date))
+                print("error in part " + part + " of testrun " + str(spreadsheet))
                 continue
             row = {}
             row["Testrun"] = testrun
@@ -169,5 +172,4 @@ if __name__ == '__main__':
             row["Number of CAs"] = count_nodes("CA", num, date)
             row = pd.DataFrame([row])
             df = pd.concat([df,row])
-
-    df.to_csv("../result.csv")
+    df.to_csv("../result.csv", index=None)
