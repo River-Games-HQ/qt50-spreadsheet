@@ -57,8 +57,6 @@ def get_excerpt(part_num: str, date: datetime):
     path = join('../material/qt30/', folder_name, file_name)
     with open(path, encoding="utf8") as file:
         lines = file.readlines()
-        lines = "\n".join(lines)
-        lines = lines.split("\n")
         for l in lines:
             if not re.search('Part ' + part_num, l):
                 lines.remove(l)
@@ -67,7 +65,7 @@ def get_excerpt(part_num: str, date: datetime):
                 break
         excerpt = ''
         for l in lines:
-            if not re.search('Part', l):
+            if not re.search('Part', l) and l != '':
                 excerpt += l + '\n'
             else:
                 break
@@ -120,6 +118,12 @@ def get_spreadsheet_data(filename: str, partnum: str):
             else:
                 result["Analysis duration"] = row[16]
                 result["Review duration"] = row[17]
+            
+            if len(str(result["Analysis duration"])) > 5:
+                result["Analysis duration"] = re.sub(":00", "", result["Analysis duration"])
+            if len(str(result["Review duration"])) > 5:
+                result["Review duration"] = re.sub(":00", "", result["Review duration"])
+            
             return result
         
 def get_part(json_num: str, filename: str):
@@ -158,10 +162,10 @@ if __name__ == '__main__':
             row["Part number"] = part
             row["Part text"] = get_excerpt(part, date)
             row["Analyst name"] = sdata["Analyst name"]
-            row["Number of words"] = 0
+            row["Number of words"] = len(row["Part text"])
             row["Analysis duration"] = sdata["Analysis duration"]
             row["Review duration"] = sdata["Review duration"]
-            row["Number of locutions"] = count_nodes("L", num, date)
+            row["Number of locutions"] = count_nodes("L", num, date) / 2
             row["Number of propositions"] = count_nodes("I", num, date)
             row["Number of YAs (asserting)"] = count_nodes("YA", num, date, ["Asserting"])
             row["Number of YAs (pure questioning, assertiv questioning, rhetorical questioning)"] = count_nodes("YA", num, date, ["PureQuestioning", "AssertiveQuestioning", "RhetoricalQuestioning"])
