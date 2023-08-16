@@ -16,12 +16,12 @@ maps_to_ignore = [
 
 # returns the names of the spreadsheets
 def get_spreadsheets():
-    return [join('../material/spreadsheets/', f) for f in listdir('../material/spreadsheets') if isfile(join('../material/spreadsheets', f)) and f.endswith('csv')]
+    return [join('./material/spreadsheets/', f) for f in listdir('./material/spreadsheets') if isfile(join('./material/spreadsheets', f)) and f.endswith('csv')]
 
 # reads a certain json file and returns it as a json object
 def read_json(number: str):
     file_name = 'nodeset' + number + '.json'
-    path = join('../material/all_json', file_name)
+    path = join('./material/all_json', file_name)
     if not isfile(path):
         print(file_name, "does not exist")
         return
@@ -32,7 +32,7 @@ def read_json(number: str):
 # filters out the date of a spreadsheet by its name (returns datetime object)
 def filter_date(filename):
     filename = filename[24:]
-    date_as_string = re.sub(r'/cuties?testrun', '', filename)
+    date_as_string = re.sub(r'cuties?testrun', '', filename)
     date_as_string = re.sub(r'\.csv', '', date_as_string)
     return datetime.strptime(date_as_string, '%d%B%Y')
 
@@ -51,30 +51,36 @@ def count_nodes(type: str, json_number: str, date: datetime, schemes=[]):
     return ct
 
 # gets the text excerpt of a part of a testrun
-def get_excerpt(part_num: str, date: datetime):
+def get_excerpt2(part_num: str, date: datetime):
     folder_name = date.strftime('%d-%m-%Y') + '/'
     file_name = date.strftime('%d-%m-%Y') + '.txt'
-    path = join('../material/qt30/', folder_name, file_name)
+    path = join('./material/qt30/', folder_name, file_name)
     with open(path, encoding="utf8") as file:
         lines = file.readlines()
-        for l in lines:
-            if not re.search('Part ' + part_num, l):
-                lines.remove(l)
-            else:
-                lines.remove(l)
-                break
+        i = 0
         excerpt = ''
-        for l in lines:
-            if not re.search('Part', l) and l != '':
-                excerpt += l + '\n'
-            else:
-                break
+        while i < len(lines):
+            line = lines[i].strip()
+            if (len(line) > 4 and line[:4] == 'Part' and line[5] == part_num):
+                #print('line: ' + line[5])
+                #print('part: ' + part_num)
+                excerpt = ''
+                j = i + 1
+                while j < len(lines):
+                    line = lines[j].strip()
+                    if (len(line) > 4 and line[:4] == 'Part'):
+                       return excerpt 
+                    else:
+                        excerpt += lines[j]
+                    j += 1        
+                return excerpt
+            i += 1
         return excerpt
 
 # returns the json numbers for all parts of a certain date
 def get_json_numbers(filename: str):
     maps = pd.read_csv(
-        '../material/map_sheet.csv', header=None)
+        './material/map_sheet.csv', header=None)
     maps = maps[[str(x) in filename for x in maps[0]]]
     nums = []
     numsMissing=[]
@@ -98,7 +104,7 @@ def get_testrun_name(filename: str):
 
 # returns all available json files
 def get_all_json_files():
-    files = [f for f in listdir('../material/all_json')]
+    files = [f for f in listdir('./material/all_json')]
     files = [re.sub(r'nodeset', '', x) for x in files]
     return [re.sub(r'\.json', '', x) for x in files]
 
@@ -107,7 +113,7 @@ def get_spreadsheet_data(filename: str, partnum: str):
     df = pd.read_csv(filename, header=None)
     for idx, row in df.iterrows():
         edge_case = False
-        if filename == "../material/spreadsheets/cutietestrun4June2020.csv" and 29 < int(partnum) < 48:
+        if filename == "./material/spreadsheets/cutietestrun4June2020.csv" and 29 < int(partnum) < 48:
             edge_case = True
         if row[0] == partnum or (edge_case and re.sub(r"^1", "", str(row[0])) == partnum):
             result = {}
@@ -128,7 +134,7 @@ def get_spreadsheet_data(filename: str, partnum: str):
         
 def get_part(json_num: str, filename: str):
     maps = pd.read_csv(
-        '../material/map_sheet.csv', header=None)
+        './material/map_sheet.csv', header=None)
     maps = maps[[str(x) in filename for x in maps[0]]]
     for idx, row in maps.iterrows():
         if row[11] == json_num:
@@ -139,7 +145,7 @@ def get_part(json_num: str, filename: str):
 
 # loops through all spreadsheets and populate the rows for the statistics df from there
 if __name__ == '__main__':
-    df = pd.read_csv('../material/statistics.csv')
+    df = pd.read_csv('./material/statistics.csv')
     spreadsheets = get_spreadsheets()
     df = pd.DataFrame(columns=["Testrun","Json ID","Part number","Part text","Analyst name","Review duration","Number of locutions","Number of propositions",
                 "Number of YAs (asserting)","Number of YAs (pure questioning, assertiv questioning, rhetorical questioning)",
@@ -176,4 +182,4 @@ if __name__ == '__main__':
             row["Number of CAs"] = count_nodes("CA", num, date)
             row = pd.DataFrame([row])
             df = pd.concat([df,row])
-    df.to_csv("../result.csv", index=None)
+    df.to_csv("./result.csv", index=None)
