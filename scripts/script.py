@@ -51,7 +51,7 @@ def count_nodes(type: str, json_number: str, date: datetime, schemes=[]):
     return ct
 
 # gets the text excerpt of a part of a testrun
-def get_excerpt2(part_num: str, date: datetime):
+def get_excerpt(part_num: str, date: datetime):
     folder_name = date.strftime('%d-%m-%Y') + '/'
     file_name = date.strftime('%d-%m-%Y') + '.txt'
     path = join('./material/qt30/', folder_name, file_name)
